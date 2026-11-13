@@ -14,7 +14,15 @@ Reinicie o Codex se a skill não aparecer imediatamente. Para usá-la de forma e
 
 ## Instalação no Claude Code
 
-No Claude Code 2.1.275 ou superior, instale diretamente do marketplace deste repositório:
+**Se você usa Codex e Claude Code na mesma máquina**, mantenha uma única cópia do repositório. Após a instalação no Codex, crie um link simbólico para o Claude Code, desde que a pasta de destino ainda não exista:
+
+```bash
+ln -s ~/.codex/skills/mestre-anderson-sites ~/.claude/skills/mestre-anderson-sites
+```
+
+Assim, os dois agentes usam os mesmos arquivos e o mesmo histórico no SourceTree. Em uma nova sessão do Claude Code, invoque `/mestre-anderson-sites:site`.
+
+**Se você usa apenas Claude Code**, instale pelo marketplace deste repositório no Claude Code 2.1.275 ou superior:
 
 ```text
 /plugin install mestre-anderson-sites --marketplace afirmacc/mestre-anderson-sites
@@ -33,19 +41,14 @@ Para trabalhar com uma cópia local ligada ao SourceTree, clone o repositório n
 git clone https://github.com/afirmacc/mestre-anderson-sites.git ~/.claude/skills/mestre-anderson-sites
 ```
 
-Em uma nova sessão do Claude Code, invoque `/mestre-anderson-sites:site`. O manifesto em `.claude-plugin/plugin.json` faz a mesma pasta funcionar como plugin pessoal no Claude Code. Para conferir a instalação, rode `claude plugin validate ~/.claude/skills/mestre-anderson-sites`, `claude plugin list` e `claude plugin details mestre-anderson-sites@skills-dir`.
-
-Se você já clonou para o Codex no mesmo computador e a pasta de destino ainda não existe, pode criar um link simbólico no lugar de uma segunda cópia:
-
-```bash
-ln -s ~/.codex/skills/mestre-anderson-sites ~/.claude/skills/mestre-anderson-sites
-```
+O manifesto em `.claude-plugin/plugin.json` faz a pasta funcionar como plugin pessoal no Claude Code. Para conferir a instalação local, rode `claude plugin validate ~/.claude/skills/mestre-anderson-sites`, `claude plugin list` e `claude plugin details mestre-anderson-sites@skills-dir`.
 
 ## Conteúdo
 
 - [`SKILL.md`](SKILL.md): instruções de trabalho do especialista.
 - [`references/caso-combinado.md`](references/caso-combinado.md): lições do projeto Combinado em Família. É um estudo de caso, não um conjunto de regras para outros produtos.
 - [`scripts/audit_public_site.py`](scripts/audit_public_site.py): verificação inicial de páginas listadas em um sitemap.
+- [`MAINTENANCE.md`](MAINTENANCE.md) e [`CHANGELOG.md`](CHANGELOG.md): rotina de melhoria, histórico e retorno a versões anteriores.
 
 Exemplo de auditoria:
 

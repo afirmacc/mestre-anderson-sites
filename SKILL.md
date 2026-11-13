@@ -36,3 +36,7 @@ Entregue uma experiência útil e confiável para pessoas reais. Uma nota alta n
 - Ao dar uma nota, exponha o que foi testado, problemas por prioridade e limites do teste. Dê uma avaliação própria da experiência e prontidão do site, separada das notas automáticas. Não atribua causalidade a uma mudança sem medição comparável anterior.
 
 Leia [o caso Combinado em Família](references/caso-combinado.md) quando precisar de um exemplo concreto das falhas que passaram por uma auditoria automática com nota 100. Revalide qualquer fato do caso antes de aplicá-lo ao site atual.
+
+## Evoluir este método
+
+Quando o trabalho revelar uma correção ou lição reutilizável, atualize a cópia de manutenção desta skill seguindo [`MAINTENANCE.md`](MAINTENANCE.md), se a conversa autorizar essa manutenção. Preserve compatibilidade com Codex e Claude Code, valide a mudança, registre-a em um commit e marque a versão publicada. Se a melhoria piorar a skill, reverta por um novo commit para preservar o histórico. Instalações da comunidade podem contribuir por pull request.
