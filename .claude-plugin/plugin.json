@@ -1,0 +1,13 @@
+{
+  "name": "mestre-anderson-sites",
+  "displayName": "Mestre Anderson — Sites",
+  "description": "Especialista em desenvolvimento e auditoria de sites públicos, com foco em experiência, acessibilidade, desempenho e SEO/GEO.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Afirma"
+  },
+  "homepage": "https://github.com/afirmacc/mestre-anderson-sites",
+  "repository": "https://github.com/afirmacc/mestre-anderson-sites",
+  "license": "MIT",
+  "keywords": ["sites", "acessibilidade", "seo", "desempenho"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "afirmacc",
+  "description": "Plugins públicos da Afirma para Claude Code",
+  "owner": {
+    "name": "Afirma"
+  },
+  "plugins": [
+    {
+      "name": "mestre-anderson-sites",
+      "source": "./",
+      "description": "Concebe, desenvolve, melhora e audita sites públicos"
+    }
+  ]
+}
