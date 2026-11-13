@@ -49,6 +49,7 @@ O manifesto em `.claude-plugin/plugin.json` faz a pasta funcionar como plugin pe
 - [`references/caso-combinado.md`](references/caso-combinado.md): lições do projeto Combinado em Família. É um estudo de caso, não um conjunto de regras para outros produtos.
 - [`scripts/audit_public_site.py`](scripts/audit_public_site.py): verificação inicial de páginas listadas em um sitemap.
 - [`MAINTENANCE.md`](MAINTENANCE.md) e [`CHANGELOG.md`](CHANGELOG.md): rotina de melhoria, histórico e retorno a versões anteriores.
+- [`BRANDING.md`](BRANDING.md): origem do avatar azul da Afirma usado no GitHub.
 
 Exemplo de auditoria:
 

@@ -1,5 +1,11 @@
 # Histórico de versões
 
+## 0.1.3
+
+- Registra o símbolo azul da Afirma aplicado como avatar da organização `afirmacc` no GitHub, substituindo o identicon rosado. As imagens nova e anterior ficam em `assets/` para reaplicação ou reversão.
+- Verificação: confirmação de atualização no GitHub, nova imagem visível nas configurações da organização e no endereço público do avatar.
+- Condução: Anderson Oliveira. Implementação: Codex desktop com a imagem fornecida por Anderson Oliveira.
+
 ## 0.1.2
 
 - Define a manutenção conjunta para Codex e Claude Code, com commits por melhoria, tags e reversão que preserva o histórico.
