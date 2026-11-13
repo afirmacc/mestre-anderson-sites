@@ -13,9 +13,9 @@ Este caso preserva lições, não requisitos para outros sites. O estado de prod
 
 - Em 320–390 px, parte da navegação horizontal e o acesso a “Entrar” ficavam escondidos sem sinal claro de rolagem. O aviso de estatísticas cobria conteúdo e ações na primeira visita.
 - O cadastro marcou 96 em acessibilidade: um link ativo tinha contraste de 4,34:1, abaixo de 4,5:1 para aquele texto. Seu SEO 66 resultava de `noindex` intencional.
-- O instalador Windows publicado não tinha assinatura Authenticode embutida. A página orientava a passar pelo aviso do SmartScreen. Isso afetava confiança e distribuição mais do que a pontuação Lighthouse.
-- O cookie antifraude publicado não tinha atributo `Secure`, embora tivesse `HttpOnly` e `SameSite=Strict`.
-- O fluxo web do GA4 recebia eventos e os eventos principais `sign_up` e `purchase` estavam configurados, mas não havia observação de ambos nos 28 dias verificados. `purchase` representava contratação, não mensalidade paga.
+- A distribuição do instalador exigiu uma revisão da assinatura do artefato final e das instruções de instalação. Confiança no download importa mais do que a pontuação Lighthouse.
+- A revisão de cookies de segurança mostrou que é preciso conferir seus atributos no ambiente publicado, além do código-fonte.
+- O fluxo web do GA4 recebia eventos, mas a configuração de eventos principais não bastava para provar que toda a jornada estava sendo medida. Um evento de contratação não equivale necessariamente a receita paga.
 - O site informava que os apps Android estavam em análise na loja. Assim, uma jornada completa de uma nova família ainda dependia de disponibilidade externa.
 - Search Console e métricas reais de usuários não foram verificados. Um sitemap válido não prova indexação.
 
